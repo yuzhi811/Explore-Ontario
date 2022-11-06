@@ -1,1 +1,37 @@
 /*Colors*/
+
+
+/* header styles */
+nav {
+    position: fixed;
+    height: 50px;
+    width: 100vw;
+    top:0;
+    background: black;;
+    opacity: 0.9;
+    z-index: 101;
+}
+.menu-container {
+    display: flex;
+    justify-content: space-around;
+}
+.menu-container li {
+    list-style: none;
+}
+.menu-container li a {
+    text-decoration: none;
+    mix-blend-mode: difference;
+}
+
+
+/* main styles */
+#pagepiling{
+}
+#slide-1{
+    background-image: url(../images/cliff-lide-1sample.jpg);
+}
+.section {
+    padding:50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
