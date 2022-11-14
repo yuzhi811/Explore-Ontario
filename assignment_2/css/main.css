@@ -1,37 +1,109 @@
 /*Colors*/
 
-
 /* header styles */
-nav {
-    position: fixed;
-    height: 50px;
-    width: 100vw;
-    top:0;
-    background: black;;
-    opacity: 0.9;
-    z-index: 101;
-}
-.menu-container {
-    display: flex;
-    justify-content: space-around;
-}
-.menu-container li {
-    list-style: none;
-}
-.menu-container li a {
-    text-decoration: none;
-    mix-blend-mode: difference;
+
+#burger-button {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(
+    to bottom,
+    #61390e,
+    #61390e 20%,
+    #e5b966 20%,
+    #e5b966 40%,
+    #61390e 40%,
+    #61390e 60%,
+    #e5b966 60%,
+    #e5b966 80%,
+    #61390e 80%,
+    #61390e 100%
+  );
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 9999;
 }
 
+#vertical-menu {
+  width: 200px;
+  height: 100%;
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: #d18c0a;
+  display: none;
+}
+
+#vertical-menu.show {
+  display: block;
+}
+
+#vertical-menu a {
+  background-color: #d18c0a;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+#vertical-menu a:hover {
+  background-color: #e5b966;
+}
+
+#vertical-menu a.active {
+  background-color: #fcc151;
+  color: black;
+}
+
+#vertical-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#close-menu-item {
+  height: 40px;
+}
+
+#close-menu-button {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+#close-menu-button:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+#close-menu-button:before,
+#close-menu-button:after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 33px;
+  width: 2px;
+  background-color: #6e4802;
+}
+#close-menu-button:before {
+  transform: rotate(45deg);
+}
+#close-menu-button:after {
+  transform: rotate(-45deg);
+}
 
 /* main styles */
-#pagepiling{
+#pagepiling {
 }
-#slide-1{
-    background-image: url(../images/cliff-lide-1sample.jpg);
+#slide-1 {
+  background-image: url(../images/cliff-lide-1sample.jpg);
 }
 .section {
-    padding:50px;
-    background-size: cover;
-    background-repeat: no-repeat;
+  padding: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }

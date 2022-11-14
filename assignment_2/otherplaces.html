@@ -4,23 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Group11" />
-    <meta name="email" content="habe0031@algonquinlive.com" />
-    <title>Assignment2</title>
+    <meta
+      name="author"
+      content="Group11(Jaewoo Lee, Ellen Habeck Simon, your name, your name)" />
+    <meta
+      name="email"
+      content="habe0031@algonquinlive.com, lee00460@algoqnuinlive.com, your email, your email" />
+    <link rel="stylesheet" type="text/css" href="./css/jquery.pagepiling.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Explore Ontario - Other Places</title>
   </head>
   <body>
-    <script></script>
     <header>
-      <nav>
-        <ul class="menu-container">
+      <h1>Explore Ontario Parks</h1>
+      <div id="burger-button" onclick="showMenu()"></div>
+      <nav id="vertical-menu">
+        <ul>
+          <li id="close-menu-item">
+            <div id="close-menu-button" onclick="hideMenu()"></div>
+          </li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="cities.html">Ontario Cities</a></li>
           <li><a href="otherplaces.html">Parks and Other Places</a></li>
           <li><a href="forecast.html">Weather Forecast</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
-        </ul>      
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </nav>
     </header>
+    <main></main>
     <footer></footer>
+    <script
+      type="text/javascript"
+      src="./scripts/jquery.1.11.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="./scripts/jquery.pagepiling.js"></script>
+    <script type="text/javascript" src="./scripts/main.js"></script>
   </body>
 </html>
