@@ -6,34 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="author"
-      content="Group11(Jaewoo Lee, Ellen Habeck Simon, your name, your name)" />
+      content="Group11(Jaewoo Lee, Ellen Habeck Simon, Ajina Lazado, Yeji Yoon)" />
     <meta
       name="email"
-      content="habe0031@algonquinlive.com, lee00460@algoqnuinlive.com, your email, your email" />
-    <link rel="stylesheet" type="text/css" href="./css/jquery.pagepiling.css" />
+      content="habe0031@algonquinlive.com, lee00460@algoqnuinlive.com, laza0041@algonquinlive.com, yoon0029@algonquinlive.com" />
     <link rel="stylesheet" href="./css/main.css" />
     <title>Explore Ontario - Other Places</title>
   </head>
   <body>
     <header>
-      <h1>Explore Ontario Parks</h1>
+      <img
+        src="images/explore-ontario-low-resolution-logo-black-on-transparent-background.png"
+        alt="Explore Ontario logo" />
+
       <div id="burger-button" onclick="showMenu()"></div>
       <nav id="vertical-menu">
         <ul>
           <li id="close-menu-item">
             <div id="close-menu-button" onclick="hideMenu()"></div>
           </li>
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="cities.html">Ontario Cities</a></li>
-          <li><a href="otherplaces.html">Parks and Other Places</a></li>
+          <li>
+            <a href="otherplaces.html" class="active">Parks and Other Places</a>
+          </li>
           <li><a href="forecast.html">Weather Forecast</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <h1>Explore Ontario Parks</h1>
+
+      <section class="place">
+        <img
+          src="images/lake.jpg"
+          alt="photo of The Rideau Canal during winter"
+          class="floatleft" />
+
+        <h2><a href="rideaucanal.html">The Rideau Canal</a></h2>
+        <p>
+          Ottawa is the capital of Canada and has many beautiful places to
+          visit. The Rideau Canal is one of the most beautiful places in the
+          city to see and it's known worldwide for being the world's largest
+          skating rink during winter.
+        </p>
+      </section>
+
+      <section class="place">
+        <img src="images/lake.jpg" alt="photo of Gatineau" class="floatright" />
+
+        <h2><a href="gatineau.html">Gatineau</a></h2>
+        <p>
+          Gatineau is a small town in Western Quebec and it is part of Canada's
+          National Capital Region being located immediately accross the Ottawa
+          river.
+        </p>
+      </section>
+
+      <section class="place">
+        <img
+          src="images/niagara-falls.jpg"
+          alt="photo of Niagara Falls"
+          class="floatleft" />
+
+        <h2><a href="niagarafalls.html">Niagara Falls</a></h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <img
+        src="images/explore-ontario-low-resolution-logo-black-on-transparent-background.png"
+        alt="Explore Ontario logo" />
+
+      <h3>About Us</h3>
+      <h3>Contact Us</h3>
+    </footer>
     <script
       type="text/javascript"
       src="./scripts/jquery.1.11.1.min.js"></script>

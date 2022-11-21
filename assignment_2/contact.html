@@ -6,40 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="author"
-      content="Group11(Jaewoo Lee, Ellen Habeck Simon, your name, your name)" />
+      content="Group11(Jaewoo Lee, Ellen Habeck Simon, Ajina Lazado, Yeji Yoon)" />
     <meta
       name="email"
-      content="habe0031@algonquinlive.com, lee00460@algoqnuinlive.com, your email, your email" />
-    <link rel="stylesheet" type="text/css" href="./css/jquery.pagepiling.css" />
+      content="habe0031@algonquinlive.com, lee00460@algoqnuinlive.com, laza0041@algonquinlive.com, yoon0029@algonquinlive.com" />
     <link rel="stylesheet" href="./css/main.css" />
     <title>Explore Ontario - Contact us</title>
   </head>
   <body>
     <header>
-      <h1>Contact us</h1>
+      <img
+        src="images/explore-ontario-low-resolution-logo-black-on-transparent-background.png"
+        alt="Explore Ontario logo" />
+
       <div id="burger-button" onclick="showMenu()"></div>
       <nav id="vertical-menu">
         <ul>
           <li id="close-menu-item">
             <div id="close-menu-button" onclick="hideMenu()"></div>
           </li>
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="cities.html">Ontario Cities</a></li>
           <li><a href="otherplaces.html">Parks and Other Places</a></li>
           <li><a href="forecast.html">Weather Forecast</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" class="active">Contact Us</a></li>
         </ul>
       </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <h1>Contact us</h1>
+      <p class="message">
+        For inquires to our team, please send us a message using the form below.<br>
+        We will get back to you within 3 business days.
+      </p>
+
+      <form name="contact-form"">
+
+        <p>
+          <label for="Name">Your Name</label>
+          <input type="text" id="name" name="firstName" maxlength="100"/>
+          <span class="alert" id="nameError"></span>
+        </p>
+      
+        <p>
+          <label for="Email">Email address</label>
+          <input type="email" id="email" name="emailAddress" maxlength="100"/>
+          <span class="alert" id="emailError"></span>
+        </p>
+       
+        <p>
+          <label for="Inquiry">Details of inquiry</label>
+          <textarea id="inquiry" name="detailsOfInquiry" rows="10" maxlength="200"></textarea>
+          <span class="alert" id="inquiryError"></span>
+        </p>
+      
+        <p class="buttons"><button type="submit" id="submit">Submit</button></p>
+       
+      </form>
+    </main>
+    <footer>
+      <img
+        src="images/explore-ontario-low-resolution-logo-black-on-transparent-background.png"
+        alt="Explore Ontario logo" />
+
+      <h3>About Us</h3>
+      <h3>Contact Us</h3>
+    </footer>
     <script
       type="text/javascript"
       src="./scripts/jquery.1.11.1.min.js"></script>
-    <script
-      type="text/javascript"
-      src="./scripts/jquery.pagepiling.js"></script>
     <script type="text/javascript" src="./scripts/main.js"></script>
   </body>
 </html>
