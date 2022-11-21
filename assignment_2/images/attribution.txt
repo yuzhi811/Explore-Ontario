@@ -1,2 +1,35 @@
-cliff slide-1sample
-<a href="https://pixabay.com/ko//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3184019">Pixabay</a>로부터 입수된 <a href="https://pixabay.com/ko/users/dimitrisvetsikas1969-1857980/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3184019">Dimitris Vetsikas</a>님의 이미지 입니다.
+*Images attribution text*
+
+About 
+Niagara falls - https://hemispheretravel.com/images/international/InternationalDestinations-NiagaraFalls.jpg
+
+
+Cities
+Toronto Skyline - https://en.wikipedia.org/wiki/Toronto#/media/File:Toronto_Skyline_Summer_2020.jpg
+
+Hamilton - https://www.travellens.co/best-things-to-do-in-hamilton-ontario/
+
+Windsor - https://en.wikipedia.org/wiki/Windsor,_Ontario
+
+Ottawa - https://www.destinationontario.com/en-ca/cities-towns/ottawa
+
+Missisauga - https://www.destinationontario.com/en-ca/cities-towns/mississauga
+
+
+
+HOME
+TORONTO - https://www.thebarkzone.com/about-us-zones
+OTTAWA - https://chamber.ca/news/still-waiting-on-a-strong-clear-path-to-restore-economic-growth-canadian-chamber-of-commerce/
+Mississauga - https://en.wikipedia.org/wiki/Mississauga#/media/File:Absolute_Mississauga_May_2012.jpg
+Hamilton - https://www.travellens.co/best-things-to-do-in-hamilton-ontario/
+
+
+
+PARKS
+
+Trillium Park - https://www.landinc.ca/ontario-place-op
+Home, Park
+Grange Park - https://grangeparktoronto.ca/grange-park-today/
+High Park - https://rove.me/to/toronto/fall-foliage?photo=1
+Victoria park - https://www.expedia.ca/Victoria-Park-London.d6218069.Vacation-Attraction?pwaDialog=gallery-open
+Algonquin Provincial Park - https://peakvisor.com/park/algonquin-provincial-park.html
