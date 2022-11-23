@@ -6,6 +6,7 @@
  *
  * Copyright (C) 2016 alvarotrigo.com - A project by Alvaro Trigo
  */
+
  html, body {
     overflow:hidden;
     margin:0;
@@ -78,7 +79,7 @@
     display: block;
     width: 14px;
     height: 13px;
-    margin: 7px;
+    margin: 15px;   /*slide button margin*/
     position:relative;
 }
 .pp-slidesNav li {
@@ -102,10 +103,10 @@
 .pp-slidesNav span {
     top: 2px;
     left: 2px;
-    width: 8px;
-    height: 8px;
+    width: 13px; /*slide button width*/
+    height: 13px; /*slide button height*/
     border: 1px solid #000;
-    background: rgba(0, 0, 0, 0);
+    background: var(--primary-color); /*slide button color*/
     border-radius: 50%;
     position: absolute;
     z-index: 1;
@@ -129,3 +130,10 @@
     overflow-y: scroll;
     height: 100%;
 }
+
+@media (max-width:1024px) {
+    #pp-nav {
+        display:none;
+    }
+
+  }

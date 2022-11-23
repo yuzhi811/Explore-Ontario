@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="author"
-      content="Group11(Jaewoo Lee, Ellen Habeck Simon, your name, your name)" />
+      content="Group11(Jaewoo Lee, Ellen Habeck Simon, Ajina Lazado, Yeji Yoon)" />
     <meta
       name="email"
       content="habe0031@algonquinlive.com, lee00460@algoqnuinlive.com, your email, your email" />
@@ -16,7 +16,16 @@
   </head>
   <body>
     <header>
-      <div id="burger-button" onclick="showMenu()"></div>
+      <!-- I used a temporary class name to just make it fixed for only index page, we should talk about if we want all logo to be fixed or not -->
+      <img
+        src="images/explore-ontario-low-resolution-logo-black-on-transparent-background.png"
+        alt="Explore Ontario logo" class="temp_fix"/>  
+
+      <div id="burger-button" onclick="showMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <nav id="vertical-menu">
         <ul>
           <li id="close-menu-item">
@@ -32,6 +41,8 @@
       </nav>
     </header>
     <main id="index_main">
+      <div class="outter-cursor"></div>
+      <div class="inner-cursor"></div>
       <div id="pagepiling">
         <div class="section pp-scrollable" id="slide-1">
             <div class="slide-content-1">
@@ -82,5 +93,6 @@
         $("#pagepiling").pagepiling();
       });
     </script>
+    <script src="scripts/cursor.js"></script>
   </body>
 </html>
