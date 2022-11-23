@@ -25,10 +25,10 @@
 }
 
 /* INDEX.HTML SLIDES STYLE */
-.index-spacing-bottom{
+.index-spacing-bottom {
   margin-bottom: 3rem;
 }
-.slide-content-1{
+.slide-content-1 {
   position: relative;
   top: 50%;
   left: 4%;
@@ -39,7 +39,7 @@
   text-align: center;
 }
 
-.slide-content-2{
+.slide-content-2 {
   position: relative;
   top: 50%;
   right: -55%;
@@ -50,7 +50,7 @@
   text-align: center;
 }
 
-.slide-content-3{
+.slide-content-3 {
   position: relative;
   top: 50%;
   left: 4%;
@@ -61,7 +61,7 @@
   text-align: center;
 }
 
-#greeting-logo{
+#greeting-logo {
   max-width: 100%;
 }
 
@@ -309,6 +309,10 @@ section.place a {
 section.place a:hover {
   font-weight: bold;
   color: var(--background-color);
+}
+
+.subpage-img {
+  height: 280px;
 }
 
 /*CONTACT.HTML STYLES*/

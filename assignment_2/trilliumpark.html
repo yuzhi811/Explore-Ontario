@@ -11,7 +11,7 @@
       name="email"
       content="habe0031@algonquinlive.com, lee00460@algoqnuinlive.com, laza0041@algonquinlive.com, yoon0029@algonquinlive.com" />
     <link rel="stylesheet" href="./css/main.css" />
-    <title>Explore Ontario - Cities</title>
+    <title>Explore Ontario - Other Places</title>
   </head>
   <body>
     <header>
@@ -19,11 +19,7 @@
         src="images/explore-ontario-low-resolution-logo-black-on-transparent-background.png"
         alt="Explore Ontario logo" />
 
-      <div id="burger-button" onclick="showMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+      <div id="burger-button" onclick="showMenu()"></div>
       <nav id="vertical-menu">
         <ul>
           <li id="close-menu-item">
@@ -31,31 +27,16 @@
           </li>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
-          <li><a href="cities.html" class="active">Ontario Cities</a></li>
-          <li><a href="otherplaces.html">Parks and Other Places</a></li>
+          <li><a href="cities.html">Ontario Cities</a></li>
+          <li>
+            <a href="otherplaces.html" class="active">Parks and Other Places</a>
+          </li>
           <li><a href="forecast.html">Weather Forecast</a></li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
     </header>
-
-    <main>
-      <section>
-        <img
-          src="images/Greater-Toronto Area-Mississauga.jpg"
-          alt="photo of greater Toronto area - Mississauga"
-          class="subpage-img" />
-
-        <h2>Greater Toronto area</h2>
-        <p>
-          Ottawa is the capital of Canada and has many beautiful places to
-          visit. The Rideau Canal is one of the most beautiful places in the
-          city to see and it's known worldwide for being the world's largest
-          skating rink during winter.
-        </p>
-      </section>
-    </main>
-
+    <main></main>
     <footer>
       <img
         src="images/explore-ontario-low-resolution-logo-black-on-transparent-background.png"
@@ -64,10 +45,12 @@
       <h3>About Us</h3>
       <h3>Contact Us</h3>
     </footer>
-
     <script
       type="text/javascript"
       src="./scripts/jquery.1.11.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="./scripts/jquery.pagepiling.js"></script>
     <script type="text/javascript" src="./scripts/main.js"></script>
   </body>
 </html>
