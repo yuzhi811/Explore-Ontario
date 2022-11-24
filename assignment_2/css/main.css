@@ -4,8 +4,7 @@
   --secondary-color: #a32328;
   --background-boxes: #f8cc73;
   --text-color: #2e3238;
-  --background-color: #fff;
-  --background-color-2: ##f9f1ab;
+  --background-color-2: #f9f1ab;
   --terciary-color: #fa9422;
   --third-background: #f5f1c7;
 }
@@ -22,6 +21,7 @@
 }
 
 #slide-4 {
+  background-image: url(../images/peterborough.jpg);
 }
 
 .section {
@@ -64,6 +64,17 @@
   transform: translateY(-50%);
   padding: 3%;
   width: 35%;
+  min-height: 10vh;
+  text-align: center;
+}
+
+.slide-content-4 {
+  position: relative;
+  top: 75%;
+  left: -3%;
+  transform: translateY(-50%);
+  padding: 3%;
+  width: 100%;
   min-height: 10vh;
   text-align: center;
 }
@@ -215,7 +226,7 @@ body h1 {
 body {
   font-family: HindSiliguri-Regular, sans-serif;
   font-size: 18px;
-  background-color: var(--background-color);
+
   color: var(--text-color);
   margin: 0;
 }
@@ -243,6 +254,10 @@ footer {
 footer img {
   height: 50px;
   margin-bottom: 15px;
+}
+
+footer h3 {
+  margin-left: 50px;
 }
 
 /*ABOUT.HTML STYLES*/
@@ -316,7 +331,7 @@ section.place a {
 
 section.place a:hover {
   font-weight: bold;
-  color: var(--background-color);
+  color: white;
 }
 
 .subpage-img {
@@ -337,11 +352,6 @@ section.place a:hover {
   color: var(--secondary-color);
 }
 
-.inquiryForm {
-  background-color: var(--background-boxes);
-  padding: 15px;
-}
-
 form {
   width: 600px;
   margin: 0 auto;
@@ -350,6 +360,11 @@ form {
   display: block;
   padding: 6x 10px;
   line-height: 1.3;
+}
+
+form input,
+form textarea {
+  background-color: var(--background-color-2);
 }
 
 form p.buttons {
@@ -370,6 +385,11 @@ textarea {
   width: 100%;
   font-family: sans-serif;
   padding: 5px;
+}
+
+#submit {
+  font-family: HindSiliguri-Regular, sans-serif;
+  height: 20px;
 }
 
 /* cursor style */
