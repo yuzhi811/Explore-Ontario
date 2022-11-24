@@ -1,10 +1,13 @@
 /* COLOR PALETTE*/
 :root {
-  --primary-color: #fa9422;
+  --primary-color: #ee9f46;
   --secondary-color: #a32328;
-  --background-color: #f8cc73;
+  --background-boxes: #f8cc73;
   --text-color: #2e3238;
-  --text-color-2: #fff;
+  --background-color: #fff;
+  --background-color-2: ##f9f1ab;
+  --terciary-color: #fa9422;
+  --third-background: #f5f1c7;
 }
 
 /*PAGEPILING ONLY FOR INDEX.HTML*/
@@ -17,6 +20,10 @@
 #slide-3 {
   background-image: url(../images/niagara-falls-index.jpg);
 }
+
+#slide-4 {
+}
+
 .section {
   height: 100vh;
   background-size: 100% 100%;
@@ -61,32 +68,28 @@
   text-align: center;
 }
 
-#greeting-logo {
-  max-width: 100%;
-}
-
-.slide-content-1::after{
-  content:'';
-  position:absolute;
+.slide-content-1::after {
+  content: "";
+  position: absolute;
   inset: 0;
-  z-index:-1;
+  z-index: -1;
   opacity: 0.7;
-  background-color: var(--background-color);
+  background-color: var(--third-background);
 }
 
-.slide-content-2::after{
-  content:'';
-  position:absolute;
-  background-color: var(--background-color);
+.slide-content-2::after {
+  content: "";
+  position: absolute;
+  background-color: var(--third-background);
   inset: 0;
   z-index: -1;
   opacity: 0.7;
 }
 
-.slide-content-3::after{
-  content:'';
-  position:absolute;
-  background-color: var(--background-color);
+.slide-content-3::after {
+  content: "";
+  position: absolute;
+  background-color: var(--third-background);
   inset: 0;
   z-index: -1;
   opacity: 0.7;
@@ -102,6 +105,7 @@ header img {
 .temp_fix {
   position: fixed;
   z-index: 9999;
+  height: 10%;
 }
 /***************************Temporary class for show so it doesn't afftec the logo in other pages for now**********************************/
 #burger-button {
@@ -116,15 +120,15 @@ header img {
   flex-direction: column;
   justify-content: space-around;
   padding: 5px;
-  background: var(--primary-color)
+  background: var(--background-boxes);
 }
 
 #burger-button span {
-  border: 2px solid var(--background-color);
+  border: 2px solid var(--primary-color);
 }
 
 #burger-button:hover {
-  background-color: var(--primary-color);
+  background-color: var(--terciary-color);
   opacity: 0.8;
   box-shadow: 1px 1px 1px var(--text-color);
 }
@@ -154,11 +158,11 @@ header img {
 }
 
 #vertical-menu a:hover {
-  background-color: var(--background-color);
+  background-color: var(--background-boxes);
 }
 
 #vertical-menu a.active {
-  background-color: var(--background-color);
+  background-color: var(--background-boxes);
   color: #2b2c53;
 }
 
@@ -204,7 +208,7 @@ header img {
 
 body h1 {
   font-family: Fuzzy Bubbles, sans-serif;
-  font-size: 40px;
+  font-size: 45px;
   text-align: center;
 }
 
@@ -229,15 +233,16 @@ main {
 
 footer {
   text-align: left;
-  height: 300px;
+  height: 250px;
   padding: 20px;
   justify-content: left;
   background-color: var(--primary-color);
-  margin-top: 40px;
+  margin-top: 80px;
 }
 
 footer img {
   height: 50px;
+  margin-bottom: 15px;
 }
 
 /*ABOUT.HTML STYLES*/
@@ -252,8 +257,8 @@ footer img {
 }
 
 .about {
-  background-color: var(--secondary-color);
-  color: var(--text-color-2);
+  background-color: var(--background-boxes);
+  color: var(--text-color);
   text-align: center;
   padding: 15px;
   margin: 0;
@@ -270,13 +275,16 @@ h2,
 
 .intro {
   text-align: center;
+  font-size: 20px;
+  padding: 0 5px 0 5px;
+  margin-bottom: 80px;
 }
 
 section.place {
   padding: 40px;
   min-height: 300px;
-  margin-bottom: 40px;
-  background-color: var(--secondary-color);
+  margin-bottom: 80px;
+  background-color: var(--background-boxes);
   color: var(--text-color-2);
 }
 
@@ -294,12 +302,12 @@ section.place img {
 
 section.place img.floatright {
   float: right;
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 section.place img.floatleft {
   float: left;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 section.place a {
@@ -327,6 +335,11 @@ section.place a:hover {
 
 .alert {
   color: var(--secondary-color);
+}
+
+.inquiryForm {
+  background-color: var(--background-boxes);
+  padding: 15px;
 }
 
 form {
@@ -367,39 +380,37 @@ textarea {
   border-radius: 50%;
   background-color: transparent;
   position: fixed;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   transform: translate(-50%, -50%);
   z-index: 9999;
   pointer-events: none;
 }
-.inner-cursor{
+.inner-cursor {
   height: 10px;
   width: 10px;
   border-radius: 50%;
   background-color: white;
   mix-blend-mode: difference;
   position: fixed;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   transform: translate(-50%, -50%);
   z-index: 9999;
   pointer-events: none;
   transition: width 0.5s, height 0.5s;
 }
 
-.inner-cursor.grow{
+.inner-cursor.grow {
   width: 25px;
   height: 25px;
   transition: width 0.5s, height 0.5s;
-
 }
-
-
 
 /* Responsive */
 @media (max-width: 1024px) {
-  .slide-content-1, .slide-content-3{
+  .slide-content-1,
+  .slide-content-3 {
     left: 0%;
     padding: 3%;
     width: 50vw;
@@ -407,23 +418,20 @@ textarea {
   .slide-content-2 {
     width: 50vw;
     left: 44%;
-
   }
 }
 
-
-@media (max-width:912px) {
+@media (max-width: 912px) {
   #vertical-menu {
-    right:-110%;
+    right: -110%;
     min-width: 100%;
   }
 
-  .slide-content-1, .slide-content-2, .slide-content-3{
+  .slide-content-1,
+  .slide-content-2,
+  .slide-content-3 {
     left: 0%;
     padding: 3%;
     width: 94vw;
-
   }
-  
-  
 }
