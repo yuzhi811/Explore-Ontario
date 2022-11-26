@@ -3,8 +3,6 @@ const nameError = document.querySelector('#nameError');
 const emailError = document.querySelector('#emailError');
 const inquiryError = document.querySelector('#inquiryError');
 
-
-
 function validation(e){
   let valid = true;
 
@@ -33,8 +31,14 @@ function validation(e){
 
   if (valid !== true){
     e.preventDefault();
+
+  }
+  
+  if (valid === true){
+    window.open('message.html')
   }
 }
 //Form submit button --calls validation function
-const formButton = document.querySelector('#form_submit');
-formButton.addEventListener('click', validation)
+document.contact_form.addEventListener('submit', validation)
+
+//Showing message after the form is successfully submitted

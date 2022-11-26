@@ -391,6 +391,12 @@ textarea {
   font-family: HindSiliguri-Regular, sans-serif;
   height: 20px;
 }
+/* submission message style */
+#submissionMessage {
+  font-size: 2em;
+}
+
+
 
 /*CITIES/PARKS SUBPAGES*/
 
@@ -439,6 +445,9 @@ img {
   
   background-color: var(background-color-2);
 }
+
+
+
 /* Dark-mode */
 #dark-button {
   position: relative;
@@ -447,6 +456,7 @@ img {
   min-height: 20px;
   border: 2px solid;
   border-radius: 160px;
+  box-shadow: inset 0px 3px 3px;
   background-color: var(--background-boxes);
   
 
@@ -461,6 +471,7 @@ img {
   border-radius: 50%;
   transform: scale(1.1);
   box-sizing: border-box;
+  box-shadow: inset 0px 1px 3px;
   background-color: var(--third-background);
   transition: all 1s;
 }
@@ -489,11 +500,23 @@ img {
     min-width: 100%;
   }
 
+  #vertical-menu ul a {
+    text-align: center;
+  }
+
   .slide-content-1,
   .slide-content-2,
   .slide-content-3 {
     left: 0%;
     padding: 3%;
     width: 94vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
   }
 }

@@ -11,7 +11,7 @@
       name="email"
       content="habe0031@algonquinlive.com, lee00460@algoqnuinlive.com, laza0041@algonquinlive.com, yoon0029@algonquinlive.com" />
     <link rel="stylesheet" href="./css/main.css" />
-    <title>Explore Ontario - Contact us</title>
+    <title>Explore Ontario - Submission</title>
   </head>
   <body>
     <header>
@@ -41,43 +41,11 @@
     </header>
     <main>
       <section>
-        <h1>Contact us</h1>
-        <p class="message">
-          For inquires to our team, please send us a message using the form
-          below.<br />
+        <h1>Thank You for Contacting Us!</h1>
+        <p id="submissionMessage" class="message">
+          Your inquiry is successfully submitted to us!<br />
           We will get back to you within 3 business days.
         </p>
-        <form name="contact_form">
-          <p>
-            <label for="Name">Your Name</label>
-            <input type="text" id="name" name="firstName" maxlength="100" />
-            <span class="alert" id="nameError"></span>
-          </p>
-
-          <p>
-            <label for="Email">Email address</label>
-            <input
-              type="text"
-              id="email"
-              name="emailAddress"
-              maxlength="100" />
-            <span class="alert" id="emailError"></span>
-          </p>
-
-          <p>
-            <label for="Inquiry">Details of inquiry</label>
-            <textarea
-              id="inquiry"
-              name="detailsOfInquiry"
-              rows="10"
-              maxlength="200"></textarea>
-            <span class="alert" id="inquiryError"></span>
-          </p>
-
-          <p class="buttons">
-            <button type="submit" id="form_submit">SUBMIT</button>
-          </p>
-        </form>
       </section>
     </main>
     <footer>
@@ -92,6 +60,5 @@
       type="text/javascript"
       src="./scripts/jquery.1.11.1.min.js"></script>
     <script type="text/javascript" src="./scripts/main.js"></script>
-    <script src="./scripts/form_validation.js"></script>
   </body>
 </html>
