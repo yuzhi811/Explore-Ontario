@@ -35,6 +35,8 @@ function validation(e){
   }
   
   if (valid === true){
+    localStorage.setItem("name", contact_form.firstName.value)
+    localStorage.setItem("email", contact_form.emailAddress.value)
     window.open('message.html')
   }
 }
