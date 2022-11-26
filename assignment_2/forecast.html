@@ -12,6 +12,11 @@
       content="habe0031@algonquinlive.com, lee00460@algoqnuinlive.com, laza0041@algonquinlive.com, yoon0029@algonquinlive.com" />
     <link rel="stylesheet" href="./css/main.css" />
     <title>Explore Ontario - Weather Forecast</title>
+    <script
+    src="https://kit.fontawesome.com/e816252b6a.js"
+    crossorigin="anonymous"
+  ></script>
+
   </head>
   <body>
     <header>
@@ -35,11 +40,38 @@
           <li><a href="otherplaces.html">Parks and Other Places</a></li>
           <li><a href="forecast.html" class="active">Weather Forecast</a></li>
           <li><a href="contact.html">Contact Us</a></li>
+          <li id="dark-button"><span class="toggle"></span></li>
         </ul>
       </nav>
     </header>
     <main>
       <h1>Weather Forecast</h1>
+      <!--  -->
+      <h3></h3>
+      <div class="weatherContainer">
+        <div class="iconBox">
+          <img src="" id="display_icon" />
+        </div>
+        <div class="forecastBox">
+          <div class="weatherWrapper">
+            <div class="inputWrapper">
+              <input
+                type="text"
+                id="cityName"
+                placeholder="Enter a city name"
+              />
+              <i
+                class="weather_data fa-solid fa-temperature-three-quarters temp"
+              ></i>
+            </div>
+            <div id="display_name"></div>
+            <div id="display_maxmin"></div>
+            <div id="display_temp"></div>
+            <div id="display_feels_like"></div>
+            <div id="display_id"></div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
       <img
@@ -52,7 +84,7 @@
     <script
       type="text/javascript"
       src="./scripts/jquery.1.11.1.min.js"></script>
-
     <script type="text/javascript" src="./scripts/main.js"></script>
+    <script src="./scripts/weatherAPI.js"></script>
   </body>
 </html>
