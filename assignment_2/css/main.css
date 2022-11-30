@@ -7,6 +7,7 @@
   --background-color-2: #f9f1ab;
   --terciary-color: #fa9422;
   --third-background: #f5f1c7;
+  --text-with-no-bg-color: #2e3238;
 
   /* weather icons */
   --sun-color: #f6852f;
@@ -165,6 +166,18 @@ header img {
   box-shadow: -2px 2px 1px var(--text-color);
   transition: all 1s;
 }
+.no_bg > p {
+  color: var(--text-with-no-bg-color);
+}
+.no_bg > h1 {
+  color: var(--text-with-no-bg-color);
+}
+form label {
+  color: var(--text-with-no-bg-color);
+}
+.message_wrapper h1 {
+  color: var(--text-with-no-bg-color);
+}
 
 #vertical-menu.show {
   right: 0;
@@ -291,7 +304,10 @@ footer h3 {
   margin: 0;
 }
 
-h2,
+h2 {
+  color: var(--secondary-color)
+}
+
 .team {
   font-size: 25px;
   font-weight: bold;
@@ -425,13 +441,13 @@ textarea {
   margin: 0 auto;
   text-align: center;
 }
-img {
+.weather_data {
   display: block;
 }
 .fa-solid {
   font-size: 180px;
 }
-input {
+#cityName {
   width: 200px;
   height: 35px;
   border: none;
@@ -553,6 +569,10 @@ input {
 
 #dark-button.active .toggle {
   left: 30px;
+}
+
+.white {
+  color:#FFFFFF;
 }
 
 /* Responsive */

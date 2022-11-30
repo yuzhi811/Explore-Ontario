@@ -14,6 +14,8 @@ var currentCookie = document.cookie;
 var cookieCheck = currentCookie.indexOf("Dark-mode");
 const logo = document.querySelector('.logo')
 const hOne = document.getElementsByTagName('h1')
+const headings= document.querySelectorAll('.heading1');
+const darkParagraph = document.querySelectorAll('paragraph_dm')
 
 //If there is an existing dark-mode cookie, add class name 'active' and apply the style or remove the class
 if (cookieCheck > -1) {
@@ -33,11 +35,10 @@ darkMode.addEventListener('click', function(){
   
     let date = new Date();
     date.setDate(date.getDate() + 1);
-
+    console.log(date);
     let darkCookie = "";
     darkCookie += "CookieName = Dark-mode;";
     darkCookie += "expires = " + date.toUTCString();
-
     document.cookie = darkCookie;
 
   } 
@@ -67,8 +68,8 @@ function lightTheme() {
   document.documentElement.style.setProperty('--background-color-2', '#f9f1ab');
   document.documentElement.style.setProperty('--terciary-color', '#fa9422');
   document.documentElement.style.setProperty('--third-background', '#f5f1c7');
-  document.documentElement.style.setProperty('--body-transperent', 'transparent')
-  document.documentElement.style.setProperty('--heading-color', '#2e3238');
+  document.documentElement.style.setProperty('--text-with-no-bg-color', '#2e3238');
+
   if (logo.classList.contains('sub_logo')){
     logo.src="images/explore-ontario-low-resolution-logo-black-on-transparent-background.png";
   }
@@ -77,8 +78,8 @@ function lightTheme() {
 // darkTheme color style
 function darkTheme(){
   document.body.style.background = '#000';
-  document.documentElement.style.setProperty('--body-transperent', '#000');
-  document.documentElement.style.setProperty('--text-color', '#000');
+  document.documentElement.style.setProperty('--text-with-no-bg-color', 'white');
+  
   if (logo.classList.contains('sub_logo')){
     logo.src="images/explore-ontario-high-resolution-logo-color-on-transparent-background.png";
   }
