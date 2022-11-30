@@ -108,15 +108,16 @@
 
 /* HEADER STYLES */
 
-header img {
-  height: 50px;
+.sub_logo {
+  max-height: 50px;
   margin: 20px;
 }
 
 .logo_fix {
   position: fixed;
   z-index: 9999;
-  height: 10%;
+  max-width: 20%;
+  margin: 20px;
 }
 
 #burger-button {
@@ -513,6 +514,10 @@ img {
     padding: 3%;
     width: 94vw;
   }
+
+  .logo_fix {
+    max-width:50%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -521,4 +526,6 @@ img {
     background-size: cover;
     background-position: center;
   }
+
+  
 }
