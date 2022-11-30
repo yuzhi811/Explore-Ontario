@@ -21,11 +21,6 @@
   --mist-color: #e290ecc0;
 }
 
-.clarfix {
-  content: "";
-  clear: both;
-  display: table;
-}
 /*PAGEPILING ONLY FOR INDEX.HTML*/
 #slide-1 {
   background-image: url(../images/ottawa-index.jpg);
@@ -309,15 +304,12 @@ footer h3 {
 }
 .right_content {
   position: absolute;
-  float:right;
   top: 50%;
   right: 0;
   transform: translateY(-50%);
   margin-right: 20px;
 }
-.left_content {
-  float:left;
-}
+
 /*ABOUT.HTML STYLES*/
 
 #about-img {
