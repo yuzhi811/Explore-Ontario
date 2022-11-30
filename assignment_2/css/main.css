@@ -8,6 +8,7 @@
   --terciary-color: #fa9422;
   --third-background: #f5f1c7;
   --text-with-no-bg-color: #2e3238;
+  --footer-text: #000;
 
   /* weather icons */
   --sun-color: #f6852f;
@@ -20,6 +21,11 @@
   --mist-color: #e290ecc0;
 }
 
+.clarfix {
+  content: "";
+  clear: both;
+  display: table;
+}
 /*PAGEPILING ONLY FOR INDEX.HTML*/
 #slide-1 {
   background-image: url(../images/ottawa-index.jpg);
@@ -147,6 +153,7 @@ header img {
 
 #burger-button span {
   border: 2px solid var(--primary-color);
+  color: var(--primary-color);
 }
 
 #burger-button:hover {
@@ -268,12 +275,14 @@ main {
 }
 
 footer {
+  position: relative;
   text-align: left;
   height: 250px;
   padding: 20px;
   justify-content: left;
   background-color: var(--primary-color);
   margin-top: 80px;
+  color: var(--footer-text);
 }
 
 footer img {
@@ -284,7 +293,28 @@ footer img {
 footer h3 {
   margin-left: 50px;
 }
+#sns_wrapper {
+  display: flex;
+  list-style: none;
+}
 
+#sns_wrapper li{
+  margin: 10px;
+}
+#sns_wrapper .sns_icons{
+  font-size: 2.5em;
+}
+.right_content {
+  position: absolute;
+  float:right;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  margin-right: 20px;
+}
+.left_content {
+  float:left;
+}
 /*ABOUT.HTML STYLES*/
 
 #about-img {
