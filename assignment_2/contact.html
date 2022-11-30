@@ -15,9 +15,11 @@
   </head>
   <body>
     <header>
-      <img
-        src="images/explore-ontario-low-resolution-logo-black-on-transparent-background.png"
-        alt="Explore Ontario logo" class="logo sub_logo"/>
+      <a href="./index.html">
+        <img
+          src="images/explore-ontario-low-resolution-logo-black-on-transparent-background.png"
+          alt="Explore Ontario logo" class="logo sub_logo"/>
+      </a>
 
       <div id="burger-button" onclick="showMenu()">
         <span></span>
@@ -40,14 +42,14 @@
       </nav>
     </header>
     <main>
-      <section>
+      <section class="no_bg">
         <h1>Contact us</h1>
-        <p class="message">
-          For inquires to our team, please send us a message using the form
-          below.<br />
-          We will get back to you within 3 business days.
-        </p>
         <form name="contact_form">
+          <p class="message">
+            For inquires to our team, please send us a message using the form
+            below.<br />
+            We will get back to you within 3 business days.
+          </p>
           <p>
             <label for="Name">Your Name</label>
             <input type="text" id="name" name="firstName" maxlength="100" />
