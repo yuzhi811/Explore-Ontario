@@ -1,8 +1,19 @@
-
-// Weather Forecast
-const weatherIcon = document.createElement("img");
+document.createElement("img");
+const weatherIcon = {
+  "01d": "fas fa-sun",
+  "02": "fas fa-cloud-sun",
+  "03": "fas fa-cloud",
+  "04": "fas fa-could-mteatball",
+  "09": "fas fa-could-sun-rain",
+  "10d": "fas fa-could-showers-heavy",
+  11: "fas fa-poo-storm",
+  13: "far fa-snowflake",
+  50: "fas fa-smog",
+};
 
 var weatherData = document.querySelector(".weather_data");
+const iconSpace = document.querySelector("#exIcon");
+const icon = document.createElement("i");
 
 //Function for fetching weather data
 function fetchWeatherData() {
@@ -38,8 +49,6 @@ function fetchWeatherData() {
         const displayTemp = document.querySelector("#display_temp");
         const displayTempMaxMin = document.querySelector("#display_maxmin");
 
-        const displayIcon = document.querySelector("#display_icon");
-
         displayName.textContent = name;
         displayTemp.textContent =
           "Current Temperature: " + Math.round(temp - 273) + "°C";
@@ -54,7 +63,54 @@ function fetchWeatherData() {
           "Feels Like: " + Math.round(feels_like - 273) + "°C";
 
         displayMain.textContent = main;
-        displayIcon.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
+        //ICON 출력
+        console.log(data.weather[0].description);
+        //
+        if (data.weather[0].description == "clear sky") {
+          icon.setAttribute("class", "fa-solid fa-sun");
+
+          // 요소 추가
+          iconSpace.appendChild(icon);
+          console.log("clear sky");
+        } else if (data.weather[0].description == "few clouds") {
+          icon.setAttribute("class", "fa-solid fa-cloud-sun");
+          iconSpace.appendChild(icon);
+
+          console.log("few clouds");
+        } else if (data.weather[0].description.includes("cloud")) {
+          icon.setAttribute("class", "fa-solid fa-cloud");
+          iconSpace.appendChild(icon);
+
+          console.log("scattered clouds");
+        } else if (data.weather[0].description == "broken clouds") {
+          icon.setAttribute("class", "fa-solid fa-cloud");
+          iconSpace.appendChild(icon);
+        } else if (data.weather[0].description.includes("shower")) {
+          icon.setAttribute("class", "fa-solid fa-cloud-sun-rain");
+          iconSpace.appendChild(icon);
+        } else if (
+          data.weather[0].description.includes("rain") ||
+          data.weather[0].description.includes("drizzle")
+          // data.weather[0].description == "moderate rain" ||
+          // data.weather[0].description == "heavy intensity rain" ||
+          // data.weather[0].description == "light rain"
+        ) {
+          icon.setAttribute("class", "fa-solid fa-cloud-rain");
+          iconSpace.appendChild(icon);
+        } else if (data.weather[0].description == "thunderstorm") {
+          icon.setAttribute("class", "fa-solid fa-cloud-bolt");
+
+          iconSpace.appendChild(icon);
+        } else if (data.weather[0].description.includes("snow")) {
+          icon.setAttribute("class", "fa-solid fa-snowflake");
+          iconSpace.appendChild(icon);
+        } else if (
+          data.weather[0].description.includes("mist") ||
+          data.weather[0].description.includes("haze")
+        ) {
+          icon.setAttribute("class", "fa-solid fa-smog");
+          iconSpace.appendChild(icon);
+        }
       })
       .catch(function (error) {
         console.log(error);
@@ -63,14 +119,24 @@ function fetchWeatherData() {
 }
 
 //display the result when you press the enter key
-document.querySelector("#cityName").addEventListener("keypress", function(event) {
+document
+  .querySelector("#cityName")
+  .addEventListener("keypress", function (event) {
     if (event.key == "Enter") {
+      console.log(iconSpace.childElementCount);
       fetchWeatherData();
+      const checkNode = document.getElementsByTagName("i");
+      const tagI = checkNode[0];
+      tagI.parentNode.removeChild(tagI);
     }
   });
 
 //display the result when you press the thermometer next to the search box
 weatherData.addEventListener("click", function (e) {
   e.preventDefault();
+
   fetchWeatherData();
+  const checkNode = document.getElementsByTagName("i");
+  const tagI = checkNode[0];
+  tagI.parentNode.removeChild(tagI);
 });
