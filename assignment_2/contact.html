@@ -2,26 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
     <meta
       name="author"
       content="Group11(Jaewoo Lee, Ellen Habeck Simon, Ajina Lazado, Yeji Yoon)" />
     <meta
       name="email"
       content="habe0031@algonquinlive.com, lee00460@algoqnuinlive.com, laza0041@algonquinlive.com, yoon0029@algonquinlive.com" />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="./css/main.css" />
     <title>Explore Ontario - Contact us</title>
   </head>
   <body>
     <header>
       <a href="./index.html">
         <img
-          src="images/explore-ontario-low-resolution-logo-black-on-transparent-background.png"
-          alt="Explore Ontario logo" class="logo sub_logo"/>
+          src="images/logo.png"
+          alt="Explore Ontario logo"
+          class="logo sub_logo" />
       </a>
 
-      <div id="burger-button" onclick="showMenu()">
+      <div
+        id="burger-button"
+        onclick="showMenu()">
         <span></span>
         <span></span>
         <span></span>
@@ -29,14 +38,22 @@
       <nav id="vertical-menu">
         <ul>
           <li id="close-menu-item">
-            <div id="close-menu-button" onclick="hideMenu()"></div>
+            <div
+              id="close-menu-button"
+              onclick="hideMenu()"></div>
           </li>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="cities.html">Ontario Cities</a></li>
           <li><a href="otherplaces.html">Parks and Other Places</a></li>
           <li><a href="forecast.html">Weather Forecast</a></li>
-          <li><a href="contact.html" class="active">Contact Us</a></li>
+          <li>
+            <a
+              href="contact.html"
+              class="active"
+              >Contact Us</a
+            >
+          </li>
           <li id="dark-button"><span class="toggle"></span></li>
         </ul>
       </nav>
@@ -52,8 +69,14 @@
           </p>
           <p>
             <label for="Name">Your Name</label>
-            <input type="text" id="name" name="firstName" maxlength="100" />
-            <span class="alert" id="nameError"></span>
+            <input
+              type="text"
+              id="name"
+              name="firstName"
+              maxlength="100" />
+            <span
+              class="alert"
+              id="nameError"></span>
           </p>
 
           <p>
@@ -63,7 +86,9 @@
               id="email"
               name="emailAddress"
               maxlength="100" />
-            <span class="alert" id="emailError"></span>
+            <span
+              class="alert"
+              id="emailError"></span>
           </p>
 
           <p>
@@ -73,25 +98,39 @@
               name="detailsOfInquiry"
               rows="10"
               maxlength="200"></textarea>
-            <span class="alert" id="inquiryError"></span>
+            <span
+              class="alert"
+              id="inquiryError"></span>
           </p>
 
           <p class="buttons">
-            <button type="submit" id="form_submit">SUBMIT</button>
+            <button
+              type="submit"
+              id="form_submit">
+              SUBMIT
+            </button>
           </p>
         </form>
       </section>
     </main>
     <footer>
-      <div class="left_content">
+      <div>
         <img
-          src="images/explore-ontario-low-resolution-logo-black-on-transparent-background.png"
+          src="images/logo.png"
           alt="Explore Ontario logo" />
 
-        <h3>About the site</h3>
-        <h3>Contact Us</h3>
-
+        <a
+          href="about.html"
+          class="footer-links"
+          >About the site</a
+        >
+        <a
+          href="contact.html"
+          class="footer-links"
+          >Contact Us</a
+        >
       </div>
+
       <div class="right_content">
         <ul id="sns_wrapper">
           <li>
@@ -115,14 +154,17 @@
             </a>
           </li>
         </ul>
-
       </div>
     </footer>
-    <script src="https://kit.fontawesome.com/e816252b6a.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/e816252b6a.js"
+      crossorigin="anonymous"></script>
     <script
       type="text/javascript"
       src="./scripts/jquery.1.11.1.min.js"></script>
-    <script type="text/javascript" src="./scripts/main.js"></script>
+    <script
+      type="text/javascript"
+      src="./scripts/main.js"></script>
     <script src="./scripts/form_validation.js"></script>
   </body>
 </html>

@@ -2,27 +2,42 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
     <meta
       name="author"
       content="Group11(Jaewoo Lee, Ellen Habeck Simon, Ajina Lazado, Yeji Yoon)" />
     <meta
       name="email"
       content="habe0031@algonquinlive.com, lee00460@algoqnuinlive.com, your email, your email" />
-    <link rel="stylesheet" type="text/css" href="./css/jquery.pagepiling.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <script src="https://kit.fontawesome.com/e816252b6a.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/jquery.pagepiling.css" />
+    <link
+      rel="stylesheet"
+      href="./css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/e816252b6a.js"
+      crossorigin="anonymous"></script>
     <title>Explore Ontario</title>
   </head>
   <body>
     <header>
-      <a href="./index.html"><img
-        src="images/explore-ontario-low-resolution-logo-black-on-transparent-background.png"
-        alt="Explore Ontario logo"
-        class="logo_fix logo"/></a>
+      <a href="./index.html"
+        ><img
+          src="images/logo.png"
+          alt="Explore Ontario logo"
+          class="logo_fix logo"
+      /></a>
 
-      <div id="burger-button" onclick="showMenu()">
+      <div
+        id="burger-button"
+        onclick="showMenu()">
         <span></span>
         <span></span>
         <span></span>
@@ -30,9 +45,17 @@
       <nav id="vertical-menu">
         <ul>
           <li id="close-menu-item">
-            <div id="close-menu-button" onclick="hideMenu()"></div>
+            <div
+              id="close-menu-button"
+              onclick="hideMenu()"></div>
           </li>
-          <li><a href="index.html" class="active">Home</a></li>
+          <li>
+            <a
+              href="index.html"
+              class="active"
+              >Home</a
+            >
+          </li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="cities.html">Ontario Cities</a></li>
           <li><a href="otherplaces.html">Parks and Other Places</a></li>
@@ -44,7 +67,9 @@
     </header>
     <main id="index_main">
       <div id="pagepiling">
-        <div class="section pp-scrollable" id="slide-1">
+        <div
+          class="section pp-scrollable"
+          id="slide-1">
           <div class="slide-content-1">
             <h1 class="index-spacing-bottom idx_h1">One Trip's Never Enough</h1>
             <p>
@@ -55,7 +80,9 @@
             </p>
           </div>
         </div>
-        <div class="section pp-scrollable" id="slide-2">
+        <div
+          class="section pp-scrollable"
+          id="slide-2">
           <div class="slide-content-2">
             <h1 class="index-spacing-bottom idx_h1">
               Where Nature and Civilization are Harmonious
@@ -71,7 +98,9 @@
           </div>
         </div>
 
-        <div class="section pp-scrollable" id="slide-3">
+        <div
+          class="section pp-scrollable"
+          id="slide-3">
           <div class="slide-content-3">
             <h1 class="index-spacing-bottom idx_h1">
               Where Nature and Civilization are Harmonious
@@ -87,18 +116,28 @@
           </div>
         </div>
 
-        <div class="section pp-scrollable" id="slide-4">
+        <div
+          class="section pp-scrollable"
+          id="slide-4">
           <div class="slide-content-4">
-
             <footer>
-              <div class="left_content">
+              <div>
                 <img
-                  src="images/explore-ontario-low-resolution-logo-black-on-transparent-background.png"
+                  src="images/logo.png"
                   alt="Explore Ontario logo" />
-                <h3>About the site</h3>
-                <h3>Contact Us</h3>
-                
+
+                <a
+                  href="about.html"
+                  class="footer-links"
+                  >About the site</a
+                >
+                <a
+                  href="contact.html"
+                  class="footer-links"
+                  >Contact Us</a
+                >
               </div>
+
               <div class="right_content">
                 <ul id="sns_wrapper">
                   <li>
@@ -122,7 +161,6 @@
                     </a>
                   </li>
                 </ul>
-
               </div>
             </footer>
           </div>
@@ -136,7 +174,9 @@
     <script
       type="text/javascript"
       src="./scripts/jquery.pagepiling.js"></script>
-    <script type="text/javascript" src="./scripts/main.js"></script>
+    <script
+      type="text/javascript"
+      src="./scripts/main.js"></script>
     <script>
       $(document).ready(function () {
         $("#pagepiling").pagepiling();

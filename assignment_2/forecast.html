@@ -2,34 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
     <meta
       name="author"
-      content="Group11(Jaewoo Lee, Ellen Habeck Simon, Ajina Lazado, Yeji Yoon)"
-    />
+      content="Group11(Jaewoo Lee, Ellen Habeck Simon, Ajina Lazado, Yeji Yoon)" />
     <meta
       name="email"
-      content="habe0031@algonquinlive.com, lee00460@algoqnuinlive.com, laza0041@algonquinlive.com, yoon0029@algonquinlive.com"
-    />
-    <link rel="stylesheet" href="./css/main.css" />
+      content="habe0031@algonquinlive.com, lee00460@algoqnuinlive.com, laza0041@algonquinlive.com, yoon0029@algonquinlive.com" />
+    <link
+      rel="stylesheet"
+      href="./css/main.css" />
     <title>Explore Ontario - Weather Forecast</title>
     <script
       src="https://kit.fontawesome.com/e816252b6a.js"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
       <a href="./index.html">
         <img
-          src="images/explore-ontario-low-resolution-logo-black-on-transparent-background.png"
+          src="images/logo.png"
           alt="Explore Ontario logo"
-          class="logo sub_logo"
-        />
+          class="logo sub_logo" />
       </a>
 
-      <div id="burger-button" onclick="showMenu()">
+      <div
+        id="burger-button"
+        onclick="showMenu()">
         <span></span>
         <span></span>
         <span></span>
@@ -37,13 +41,21 @@
       <nav id="vertical-menu">
         <ul>
           <li id="close-menu-item">
-            <div id="close-menu-button" onclick="hideMenu()"></div>
+            <div
+              id="close-menu-button"
+              onclick="hideMenu()"></div>
           </li>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="cities.html">Ontario Cities</a></li>
           <li><a href="otherplaces.html">Parks and Other Places</a></li>
-          <li><a href="forecast.html" class="active">Weather Forecast</a></li>
+          <li>
+            <a
+              href="forecast.html"
+              class="active"
+              >Weather Forecast</a
+            >
+          </li>
           <li><a href="contact.html">Contact Us</a></li>
           <li id="dark-button"><span class="toggle"></span></li>
         </ul>
@@ -68,13 +80,11 @@
               <input
                 type="text"
                 id="cityName"
-                placeholder="Enter a city name"
-              />
+                placeholder="Enter a city name" />
               <img
                 src="https://cdn.pixabay.com/photo/2016/03/31/15/27/cold-1293305_960_720.png"
                 alt="thermometer"
-                class="weather_data"
-              />
+                class="weather_data" />
               <!-- <i
                 class="weather_data fa-solid fa-temperature-three-quarters temp"
               ></i> -->
@@ -90,15 +100,23 @@
       </div>
     </main>
     <footer>
-      <div class="left_content">
+      <div>
         <img
-          src="images/explore-ontario-low-resolution-logo-black-on-transparent-background.png"
+          src="images/logo.png"
           alt="Explore Ontario logo" />
 
-        <h3>About the site</h3>
-        <h3>Contact Us</h3>
-
+        <a
+          href="about.html"
+          class="footer-links"
+          >About the site</a
+        >
+        <a
+          href="contact.html"
+          class="footer-links"
+          >Contact Us</a
+        >
       </div>
+
       <div class="right_content">
         <ul id="sns_wrapper">
           <li>
@@ -122,15 +140,17 @@
             </a>
           </li>
         </ul>
-
       </div>
     </footer>
-    <script src="https://kit.fontawesome.com/e816252b6a.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/e816252b6a.js"
+      crossorigin="anonymous"></script>
     <script
       type="text/javascript"
-      src="./scripts/jquery.1.11.1.min.js"
-    ></script>
-    <script type="text/javascript" src="./scripts/main.js"></script>
+      src="./scripts/jquery.1.11.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="./scripts/main.js"></script>
     <script src="./scripts/weatherAPI.js"></script>
   </body>
 </html>
