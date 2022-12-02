@@ -425,7 +425,7 @@ textarea {
   margin: 0 auto;
   text-align: center;
 }
-img {
+.weather_data {
   display: block;
 }
 .fa-solid {
@@ -442,7 +442,9 @@ input {
 #weather_data {
   opacity: 0;
 }
-
+.weatherTitle {
+  line-height: 35px;
+}
 .weatherContainer {
   display: flex;
   flex-direction: row;
@@ -499,7 +501,9 @@ input {
   width: 15px;
   padding: 5px;
 }
-
+.hidden {
+  display: none;
+}
 /* weather icon styling */
 .fa-sun {
   color: var(--sun-color);
