@@ -7,6 +7,8 @@
   --background-color-2: #f9f1ab;
   --terciary-color: #fa9422;
   --third-background: #f5f1c7;
+  --text-with-no-bg-color: #2e3238;
+  --footer-text: #000;
 
   /* weather icons */
   --sun-color: #f6852f;
@@ -146,6 +148,7 @@ header img {
 
 #burger-button span {
   border: 2px solid var(--primary-color);
+  color: var(--primary-color);
 }
 
 #burger-button:hover {
@@ -164,6 +167,18 @@ header img {
   background-color: var(--primary-color);
   box-shadow: -2px 2px 1px var(--text-color);
   transition: all 1s;
+}
+.no_bg > p {
+  color: var(--text-with-no-bg-color);
+}
+.no_bg > h1 {
+  color: var(--text-with-no-bg-color);
+}
+form label {
+  color: var(--text-with-no-bg-color);
+}
+.message_wrapper h1 {
+  color: var(--text-with-no-bg-color);
 }
 
 #vertical-menu.show {
@@ -255,12 +270,14 @@ main {
 }
 
 footer {
+  position: relative;
   text-align: left;
   height: 250px;
   padding: 20px;
   justify-content: left;
   background-color: var(--primary-color);
   margin-top: 80px;
+  color: var(--footer-text);
 }
 
 footer img {
@@ -268,8 +285,36 @@ footer img {
   margin-bottom: 15px;
 }
 
-footer h3 {
-  margin-left: 50px;
+footer div .footer-links {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-size: 18pt;
+  color: #000;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+}
+
+#sns_wrapper {
+  display: flex;
+  list-style: none;
+}
+
+#sns_wrapper li {
+  margin: 10px;
+}
+#sns_wrapper li a {
+  color: var(--footer-text);
+}
+#sns_wrapper .sns_icons {
+  font-size: 2.5em;
+}
+.right_content {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  margin-right: 20px;
 }
 
 /*ABOUT.HTML STYLES*/
@@ -291,7 +336,10 @@ footer h3 {
   margin: 0;
 }
 
-h2,
+h2 {
+  color: var(--secondary-color);
+}
+
 .team {
   font-size: 25px;
   font-weight: bold;
@@ -315,38 +363,52 @@ section.place {
   color: var(--text-color-2);
 }
 
-section.place h2 {
+section.about_place {
+  padding: 40px;
+  min-height: 300px;
+  margin-bottom: 20px;
+  background-color: var(--background-boxes);
   color: var(--text-color-2);
 }
 
-section.place p {
+section.place h2,
+section.about_place h2 {
+  color: var(--text-color-2);
+}
+
+section.place p,
+section.about_place p {
   margin-right: 15px;
 }
 
-section.place img {
+section.place img,
+section.about_place img {
   height: 300px;
 }
 
-section.place img.floatright {
+section.place img.floatright,
+section.about_place img.floatright {
   float: right;
   margin-left: 15px;
 }
 
-section.place img.floatleft {
+section.place img.floatleft,
+section.about_place img.floatleft {
   float: left;
   margin-right: 15px;
 }
 
-section.place a {
+section.place a,
+section.about_place a {
   color: var(--text-color-2);
 }
 
-section.place a:hover {
+section.place a:hover section.about_place a:hover {
   font-weight: bold;
   color: white;
 }
 
-.subpage-img {
+#subpage-img {
   height: 280px;
 }
 
@@ -431,7 +493,7 @@ textarea {
 .fa-solid {
   font-size: 180px;
 }
-input {
+#cityName {
   width: 200px;
   height: 35px;
   border: none;
@@ -529,6 +591,7 @@ input {
 .fa-smog {
   color: var(--mist-color);
 }
+
 /* Dark-mode */
 #dark-button {
   position: relative;
@@ -557,6 +620,10 @@ input {
 
 #dark-button.active .toggle {
   left: 30px;
+}
+
+.white {
+  color: #ffffff;
 }
 
 /* Responsive */

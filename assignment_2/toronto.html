@@ -15,9 +15,11 @@
   </head>
   <body>
     <header>
-      <img
-        src="images/explore-ontario-low-resolution-logo-black-on-transparent-background.png"
-        alt="Explore Ontario logo" class="logo sub_logo"/>
+      <a href="./index.html">
+        <img
+          src="images/logo.png"
+          alt="Explore Ontario logo" class="logo sub_logo"/>
+      </a>
 
       <div id="burger-button" onclick="showMenu()">
         <span></span>
@@ -41,15 +43,15 @@
     </header>
 
     <main>
-        <section>
-          <h1>Toronto</h1>
+        <section class="no_bg">
+          <h1 class="heading1">Toronto</h1>
           <img
             id="about-img"
             src="images/Toronto.jpg"
-            alt="about us image" />
+            alt="photo of Toronto" />
         </section>
 
-        <section class="activities">
+        <section class="activities no_bg">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -64,8 +66,8 @@
           </p>
         </section>
 
-        <section class="activities">
-          <h2>Greater Toronto area</h2>
+        <section class="activities no_bg">
+          <h2>Downtown Toronto</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -77,14 +79,22 @@
           </p>
         </section>
 
-        <div id="city-block">
+        <section class="about_place">
           <img
-            src="images/Greater-Toronto-Area.jpg"
-            alt="photo of greater Toronto area - Mississauga"
-            class="subpage-img" />
-        </div>
+            src="images/toronto-2.jpg"
+            alt="photo of Toronto"
+            class="floatleft" />
+          <h2>History</h2>
+          <p>
+            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+            consectetur, adipisci velit, sed quia non numquam eius modi tempora
+            incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut
+            enim ad minima veniam, quis nostrum exercitationem ullam corporis
+            suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+          </p>
+        </section>
 
-        <section class="activities">
+        <section class="activities no_bg">
           <h2>What to do?</h2>
           <p>
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -99,30 +109,17 @@
           </p>
         </section>
 
-        <section class="place">
+        <section class="about_place">
           <img
-            src="images/Toronto-3.jpg"
-            alt="photo of Toronto at night"
-            class="floatleft" />
+          src="images/Toronto-3.jpg"
+          alt="photo of Toronto"
+          class="floatright" />
           <h2>Night Life</h2>
-          <p>
-            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-            consectetur, adipisci velit, sed quia non numquam eius modi tempora
-            incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut
-            enim ad minima veniam, quis nostrum exercitationem ullam corporis
-            suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
-          </p>
-        </section>
-
-        <section>
-          <h2>Weather</h2>
           <p>
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
             quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-            eos qui ratione voluptatem sequi nesciunt.
+            dicta sunt explicabo.
           </p>
 
           <p>Check the Weather Forecast <a href="forecast.html"> here.</a></p>
@@ -131,13 +128,50 @@
     </main>
 
     <footer>
-      <img
-        src="images/explore-ontario-low-resolution-logo-black-on-transparent-background.png"
-        alt="Explore Ontario logo" />
+      <div>
+        <img
+          src="images/logo.png"
+          alt="Explore Ontario logo" />
 
-      <h3>About the site</h3>
-      <h3>Contact Us</h3>
+        <a
+          href="about.html"
+          class="footer-links"
+          >About the site</a
+        >
+        <a
+          href="contact.html"
+          class="footer-links"
+          >Contact Us</a
+        >
+      </div>
+
+      <div class="right_content">
+        <ul id="sns_wrapper">
+          <li>
+            <a href="http://www.facebook.com">
+              <i class="sns_icons fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="http://www.instagram.com">
+              <i class="sns_icons fa-brands fa-square-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.pinterest.ca/">
+              <i class="sns_icons fa-brands fa-pinterest"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/home?lang=en">
+              <i class="sns_icons fa-brands fa-twitter"></i>
+            </a>
+          </li>
+        </ul>
+
+      </div>
     </footer>
+    <script src="https://kit.fontawesome.com/e816252b6a.js" crossorigin="anonymous"></script>
 
     <script
       type="text/javascript"

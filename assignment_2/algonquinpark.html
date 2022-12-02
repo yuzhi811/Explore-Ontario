@@ -15,9 +15,11 @@
   </head>
   <body>
     <header>
-      <img
-        src="images/explore-ontario-low-resolution-logo-black-on-transparent-background.png"
-        alt="Explore Ontario logo" class="logo sub_logo"/>
+      <a href="./index.html">
+        <img
+          src="images/logo.png"
+          alt="Explore Ontario logo" class="logo sub_logo"/>
+      </a>
 
       <div id="burger-button" onclick="showMenu()">
         <span></span>
@@ -31,31 +33,149 @@
           </li>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
-          <li><a href="cities.html">Ontario Cities</a></li>
-          <li>
-            <a href="otherplaces.html" class="active">Parks and Other Places</a>
-          </li>
+          <li><a href="cities.html" class="active">Ontario Cities</a></li>
+          <li><a href="otherplaces.html">Parks and Other Places</a></li>
           <li><a href="forecast.html">Weather Forecast</a></li>
           <li><a href="contact.html">Contact Us</a></li>
           <li id="dark-button"><span class="toggle"></span></li>
         </ul>
       </nav>
     </header>
-    <main></main>
-    <footer>
-      <img
-        src="images/explore-ontario-low-resolution-logo-black-on-transparent-background.png"
-        alt="Explore Ontario logo" />
 
-      <h3>About the site</h3>
-      <h3>Contact Us</h3>
+    <main>
+        <section class="no_bg">
+          <h1 class="heading1">Algonquin Provincial Park</h1>
+          <img
+            id="about-img"
+            src="images/algonquin-park-3.jpg"
+            alt="photo of the park" />
+        </section>
+
+        <section class="activities no_bg">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum. Neque porro quisquam est,
+            qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+            sed quia non numquam eius modi tempora incidunt ut labore et dolore
+            magnam aliquam quaerat voluptatem.
+          </p>
+        </section>
+
+        <section class="activities no_bg">
+          <h2>The Park</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </section>
+
+        <section class="about_place">
+          <img
+            src="images/algonquin-park-2.jpg"
+            alt="photo of the park"
+            class="floatleft" />
+          <h2>History</h2>
+          <p>
+            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+            consectetur, adipisci velit, sed quia non numquam eius modi tempora
+            incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut
+            enim ad minima veniam, quis nostrum exercitationem ullam corporis
+            suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+          </p>
+        </section>
+
+        <section class="activities no_bg">
+          <h2>What to do?</h2>
+          <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore veritatis et quasi architecto beatae vitae
+            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+            eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+            qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+            sed quia non numquam eius modi tempora incidunt ut labore et dolore
+            magnam aliquam quaerat voluptatem.
+          </p>
+        </section>
+
+        <section class="about_place">
+          <img
+          src="images/algonquin-park-1.jpg"
+          alt="photo of the park"
+          class="floatright" />
+          <h2>Nature</h2>
+          <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore veritatis et quasi architecto beatae vitae
+            dicta sunt explicabo.
+          </p>
+
+          <p>Check the Weather Forecast <a href="forecast.html"> here.</a></p>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <img
+          src="images/logo.png"
+          alt="Explore Ontario logo" />
+
+        <a
+          href="about.html"
+          class="footer-links"
+          >About the site</a
+        >
+        <a
+          href="contact.html"
+          class="footer-links"
+          >Contact Us</a
+        >
+      </div>
+
+      <div class="right_content">
+        <ul id="sns_wrapper">
+          <li>
+            <a href="http://www.facebook.com">
+              <i class="sns_icons fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="http://www.instagram.com">
+              <i class="sns_icons fa-brands fa-square-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.pinterest.ca/">
+              <i class="sns_icons fa-brands fa-pinterest"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/home?lang=en">
+              <i class="sns_icons fa-brands fa-twitter"></i>
+            </a>
+          </li>
+        </ul>
+
+      </div>
     </footer>
+    <script src="https://kit.fontawesome.com/e816252b6a.js" crossorigin="anonymous"></script>
+
     <script
       type="text/javascript"
       src="./scripts/jquery.1.11.1.min.js"></script>
-    <script
-      type="text/javascript"
-      src="./scripts/jquery.pagepiling.js"></script>
     <script type="text/javascript" src="./scripts/main.js"></script>
   </body>
 </html>

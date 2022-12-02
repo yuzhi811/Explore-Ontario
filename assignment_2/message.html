@@ -2,24 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
     <meta
       name="author"
       content="Group11(Jaewoo Lee, Ellen Habeck Simon, Ajina Lazado, Yeji Yoon)" />
     <meta
       name="email"
       content="habe0031@algonquinlive.com, lee00460@algoqnuinlive.com, laza0041@algonquinlive.com, yoon0029@algonquinlive.com" />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="./css/main.css" />
     <title>Explore Ontario - Submission</title>
   </head>
   <body>
     <header>
-      <img
-        src="images/explore-ontario-low-resolution-logo-black-on-transparent-background.png"
-        alt="Explore Ontario logo" class="logo sub_logo"/>
+      <a href="./index.html">
+        <img
+          src="images/logo.png"
+          alt="Explore Ontario logo"
+          class="logo sub_logo" />
+      </a>
 
-      <div id="burger-button" onclick="showMenu()">
+      <div
+        id="burger-button"
+        onclick="showMenu()">
         <span></span>
         <span></span>
         <span></span>
@@ -27,48 +38,97 @@
       <nav id="vertical-menu">
         <ul>
           <li id="close-menu-item">
-            <div id="close-menu-button" onclick="hideMenu()"></div>
+            <div
+              id="close-menu-button"
+              onclick="hideMenu()"></div>
           </li>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="cities.html">Ontario Cities</a></li>
           <li><a href="otherplaces.html">Parks and Other Places</a></li>
           <li><a href="forecast.html">Weather Forecast</a></li>
-          <li><a href="contact.html" class="active">Contact Us</a></li>
+          <li>
+            <a
+              href="contact.html"
+              class="active"
+              >Contact Us</a
+            >
+          </li>
           <li id="dark-button"><span class="toggle"></span></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section>
-        <h1 id="messageH1">Thank You for Contacting Us </h1>
+      <section class="message_wrapper">
+        <h1 id="messageH1">Thank You for Contacting Us</h1>
         <p class="message largeMessage">
           Your inquiry is successfully submitted to us!
         </p>
-        <p id="submissionMessage" class="message largeMessage">
-        </p>
+        <p
+          id="submissionMessage"
+          class="message largeMessage"></p>
       </section>
     </main>
     <footer>
-      <img
-        src="images/explore-ontario-low-resolution-logo-black-on-transparent-background.png"
-        alt="Explore Ontario logo" />
+      <div>
+        <img
+          src="images/logo.png"
+          alt="Explore Ontario logo" />
 
-      <h3>About the site</h3>
-      <h3>Contact Us</h3>
+        <a
+          href="about.html"
+          class="footer-links"
+          >About the site</a
+        >
+        <a
+          href="contact.html"
+          class="footer-links"
+          >Contact Us</a
+        >
+      </div>
+
+      <div class="right_content">
+        <ul id="sns_wrapper">
+          <li>
+            <a href="http://www.facebook.com">
+              <i class="sns_icons fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="http://www.instagram.com">
+              <i class="sns_icons fa-brands fa-square-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.pinterest.ca/">
+              <i class="sns_icons fa-brands fa-pinterest"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/home?lang=en">
+              <i class="sns_icons fa-brands fa-twitter"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
+    <script
+      src="https://kit.fontawesome.com/e816252b6a.js"
+      crossorigin="anonymous"></script>
     <script
       type="text/javascript"
       src="./scripts/jquery.1.11.1.min.js"></script>
-    <script type="text/javascript" src="./scripts/main.js"></script>
+    <script
+      type="text/javascript"
+      src="./scripts/main.js"></script>
   </body>
   <script>
     let name = localStorage.getItem("name");
-    let heading = document.querySelector('#messageH1');
-    let email = localStorage.getItem("email")
-    let subMessage = document.querySelector('#submissionMessage')
-    heading.textContent += name + '!';
-    subMessage.textContent += 'We will get back to "' + email + '" within 3 business days.';
-  
+    let heading = document.querySelector("#messageH1");
+    let email = localStorage.getItem("email");
+    let subMessage = document.querySelector("#submissionMessage");
+    heading.textContent += name + "!";
+    subMessage.textContent +=
+      'We will get back to "' + email + '" within 3 business days.';
   </script>
 </html>
