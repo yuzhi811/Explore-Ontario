@@ -504,7 +504,9 @@ textarea {
 #weather_data {
   opacity: 0;
 }
-
+.weatherTitle {
+  line-height: 35px;
+}
 .weatherContainer {
   display: flex;
   flex-direction: row;
@@ -561,7 +563,9 @@ textarea {
   width: 15px;
   padding: 5px;
 }
-
+.hidden {
+  display: none;
+}
 /* weather icon styling */
 .fa-sun {
   color: var(--sun-color);

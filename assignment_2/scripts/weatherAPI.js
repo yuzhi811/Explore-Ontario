@@ -123,6 +123,7 @@ document
   .querySelector("#cityName")
   .addEventListener("keypress", function (event) {
     if (event.key == "Enter") {
+      document.querySelector(".weatherTitle").classList.add("hidden");
       console.log(iconSpace.childElementCount);
       fetchWeatherData();
       const checkNode = document.getElementsByTagName("i");
@@ -134,6 +135,7 @@ document
 //display the result when you press the thermometer next to the search box
 weatherData.addEventListener("click", function (e) {
   e.preventDefault();
+  document.querySelector(".weatherTitle").classList.add("hidden");
 
   fetchWeatherData();
   const checkNode = document.getElementsByTagName("i");
