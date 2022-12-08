@@ -298,6 +298,7 @@ footer div .footer-links {
 #sns_wrapper {
   display: flex;
   list-style: none;
+  padding-left: 0;
 }
 
 #sns_wrapper li {
@@ -338,12 +339,7 @@ footer div .footer-links {
 
 h2 {
   color: var(--secondary-color);
-}
-
-.team {
-  font-size: 25px;
-  font-weight: bold;
-  color: var(--secondary-color);
+  font-size: 1.5em;
 }
 
 /*CITIES.HTML and OTHERPLACES.HTML STYLES*/
@@ -406,10 +402,6 @@ section.about_place a {
 section.place a:hover section.about_place a:hover {
   font-weight: bold;
   color: white;
-}
-
-#subpage-img {
-  height: 280px;
 }
 
 /*CONTACT.HTML STYLES*/
@@ -638,6 +630,10 @@ textarea {
     width: 50vw;
     left: 44%;
   }
+  #about-img {
+    max-width: 100%;
+    opacity: 1;
+  }
 }
 
 @media (max-width: 912px) {
@@ -657,6 +653,15 @@ textarea {
     padding: 3%;
     width: 94vw;
   }
+
+  .logo_fix {
+    height: auto;
+    width: 80%;
+  }
+  form {
+    width: 80%;
+
+  }
 }
 
 @media (max-width: 768px) {
@@ -665,11 +670,30 @@ textarea {
     background-size: cover;
     background-position: center;
   }
-}
 
-@media (max-width: 768px) {
+  footer {
+    text-align: center;
+  }
+  .right_content {
+    position: static;
+    justify-content: center;
+    padding-left: 0;
+    margin-top: 50px;
+    margin-right: 0px;
+  }
+  #sns_wrapper {
+    justify-content: center;
+  }
   .weatherContainer {
     display: flex;
     flex-direction: column;
   }
+
+  section.place img,
+  section.about_place img {
+  width: 100%;
+  height: auto;
+  }
+
 }
+
