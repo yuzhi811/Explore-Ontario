@@ -63,13 +63,13 @@ function fetchWeatherData() {
           "Feels Like: " + Math.round(feels_like - 273) + "°C";
 
         displayMain.textContent = main;
-        //ICON 출력
+        //ICON display
         console.log(data.weather[0].description);
         //
         if (data.weather[0].description == "clear sky") {
           icon.setAttribute("class", "fa-solid fa-sun");
 
-          // 요소 추가
+          // populate elements
           iconSpace.appendChild(icon);
           console.log("clear sky");
         } else if (data.weather[0].description == "few clouds") {
