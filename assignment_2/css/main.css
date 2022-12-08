@@ -286,8 +286,7 @@ footer img {
 }
 
 footer div .footer-links {
-  margin-left: 20px;
-  margin-bottom: 10px;
+  margin: 20px 0 10px 20px;
   font-size: 18pt;
   color: #000;
   text-decoration: none;
@@ -678,6 +677,7 @@ textarea {
     position: static;
     justify-content: center;
     padding-left: 0;
+    margin-left: 20px;
     margin-top: 50px;
     margin-right: 0px;
   }
